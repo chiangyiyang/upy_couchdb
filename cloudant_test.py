@@ -34,9 +34,9 @@ try:
     # print(res)
 
     for i in range(100):
-        res = db.add_doc(base_url, db_name, {'dev_id': dev_id, 'temperature': 20 + rnd.getrandbits(4), 'humidity': 80 + rnd.getrandbits(4)})
-        # res = db.add_doc_with_update(base_url, db_name, '_design/utils/_update/add_with_timestamp', 
-        #         {'dev_id': dev_id, 'temperature': 20 + rnd.getrandbits(4), 'humidity': 80 + rnd.getrandbits(4)})
+        # res = db.add_doc(base_url, db_name, {'dev_id': dev_id, 'temperature': 20 + rnd.getrandbits(4), 'humidity': 80 + rnd.getrandbits(4)})
+        res = db.add_doc_with_update(base_url, db_name, '_design/utils/_update/add_with_timestamp', 
+                {'dev_id': dev_id, 'temperature': 20 + rnd.getrandbits(4), 'humidity': 80 + rnd.getrandbits(4)})
         print(res)
         sleep(3)
 
