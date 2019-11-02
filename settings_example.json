@@ -7,6 +7,7 @@
     "server": "SERVER IP",
     "port": "DATABASE SERVICE PORT",
     "cloudant_url":"path to server on cloudant.com",
+    "cloudant_key":"BASE64 of api_key:password",
     "db_name": "DATABASE NAME",
     "dev_id": "DEVICE ID"
 }

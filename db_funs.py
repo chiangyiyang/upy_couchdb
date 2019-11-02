@@ -1,5 +1,5 @@
-# import gc
-# gc.collect()
+import gc
+gc.collect()
 
 from time import sleep
 import wifi
@@ -19,6 +19,7 @@ db_name = settings["db_name"]
 dev_id = settings["dev_id"]
 
 base_url = 'http://{}:{}'.format(server, port)
+headers = {'Authorization': 'Basic {}'.format(base64_auth)}
 
 if wifi.is_connected() == False:
     wifi.connect(ap, ap_pass)
@@ -27,8 +28,8 @@ if wifi.is_connected() == False:
 try:
     # res = db.get_all_dbs(base_url)
     # res = db.get_db(base_url, db_name)
-    # res = db.add_db(base_url, db_name, {'Authorization': 'Basic {}'.format(base64_auth)})
-    # res = db.del_db(base_url, db_name, {'Authorization': 'Basic {}'.format(base64_auth)})
+    # res = db.add_db(base_url, db_name, headers = headers)
+    # res = db.del_db(base_url, db_name, headers = headers)
     # print(res)
 
     for i in range(100):
