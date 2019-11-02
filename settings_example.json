@@ -1,0 +1,11 @@
+{
+    "ap": "WIFI NAME",
+    "ap_password": "WIFI PASSWORD",
+    "db_account": "ADMIN ACCOUNT",
+    "db_password": "ADMIN PASSWORD",
+    "base64_auth": "BASE64 of 'ACCOUNT:PASSWORD'",
+    "server": "SERVER IP",
+    "port": "DATABASE SERVICE PORT",
+    "db_name": "DATABASE NAME",
+    "dev_id": "DEVICE ID"
+}
